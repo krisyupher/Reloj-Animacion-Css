@@ -7,24 +7,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #6bb9f0;
 }
-
-/* .lineaHorizontal {
-  position: absolute;
-  top: 50%;
-  height: 1px;
-  width: 100vw;
-  background-color: red;
-}
-
-.lineaVertical {
-  position: absolute;
-  left: 50%;
-  height: 100vh;
-  width: 1px;
-  background-color: blue;
-} */
 
 .ContenedorMayor {
   width: 100%;
@@ -32,80 +15,25 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url("../img/gold-background.jpg");
+  background-size: cover;
+  background-position: center;
 }
-
-.div1, .div2, .div3, .div4 {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  /* background-color: rgb(241, 96, 171); */
-}
-
-.div1 {
-  left: 33%;
-  top: 9%;
-}
-
-.div2 {
-  left: 54.5%;
-  top: 9%;
-  transform: rotateY(180deg);
-}
-
-.div3 {
-  left: 33%;
-  top: 66%;
-  transform: rotateZ(180deg);
-  transform: rotateX(180deg);
-}
-
-.div4 {
-  left: 54.5%;
-  top: 66%;
-  transform: rotateZ(180deg);
-}
-
-.Soporte {
-  background-color: rgb(66, 66, 66);
-  border-top: 1px solid rgb(47, 47, 47);
-  border-left: 1px solid rgb(47, 47, 47);
-  position: absolute;
-  left: 50%;
-  width: 35px;
-  height: 150px;
-  border-bottom-right-radius: 50%;
-}
-
-.SoporteAyuda {
-  position: relative;
-  left: 32%;
-  top: 10%;
-  width: 50px;
-  height: 130px;
-  background-color: #6bb9f0;
-  border-radius: 50%;
-  /* border: 1px solid red; */
-  transform: rotate(10deg);
-}
-
 .contenedorReloj {
-  box-shadow: 50px 50px 0px 200px #213747;
   z-index: 1;
 }
 .CirculoExterior {
-  /* border: 1px solid red; */
-  background-color: rgb(66, 66, 66);
-  height: 65vh;
-  width: 65vh;
+  background-image: url("../img/ray-background.jpg");
+  background-size: cover;
+  height: 55vh;
+  width: 55vh;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .CirculoInterior {
-  /* border: 1px solid red; */
   background-color: rgb(238, 238, 238);
   height: 50vh;
   width: 50vh;
@@ -114,7 +42,6 @@ body {
   justify-content: center;
   border-radius: 50%;
   position: relative;
-  border
 }
 
 .Num3 {
@@ -143,7 +70,6 @@ body {
   font-size: 30px;
 }
 
-
 .ContenedorSegundero {
   height: 70%;
   width: 6%;
@@ -153,12 +79,14 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   position: absolute;
-}.Sgundero {
+}
+.Sgundero {
   background-image: url("../img/AgujaSegundos.png");
-  background-size:contain;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 75%;
-}@keyframes Segundero {
+}
+@keyframes Segundero {
   0% {
     transform: rotateZ(0deg);
   }
@@ -167,7 +95,6 @@ body {
     transform: rotateZ(360deg);
   }
 }
-
 
 .ContenedorMinutero {
   height: 70%;
@@ -178,11 +105,13 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   position: absolute;
-}.Minutero {
+}
+.Minutero {
   background-image: url("../img/AgujaGrande.png");
   background-size: cover;
   height: 55%;
-}@keyframes Minutero {
+}
+@keyframes Minutero {
   0% {
     transform: rotateZ(0deg);
   }
@@ -190,7 +119,6 @@ body {
     transform: rotateZ(360deg);
   }
 }
-
 
 .ContenedorHora {
   height: 56%;
@@ -201,12 +129,14 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   position: absolute;
-}.Hora {
+}
+.Hora {
   background-image: url("../img/AgujaPeque.png");
   background-size: 30px 120px;
   background-repeat: no-repeat;
   height: 70%;
-}@keyframes Horario{
+}
+@keyframes Horario {
   0% {
     transform: rotateZ(0deg);
   }
