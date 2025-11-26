@@ -65,55 +65,80 @@ body {
   border: 6px solid #8b7355;
 }
 
-.Num3 {
+/* Base styles for all numbers */
+.CirculoInterior p[class^="Num"] {
   position: absolute;
-  top: 46%;
-  left: 80%;
   font-size: 28px;
   font-weight: bold;
   color: #1a1a1a;
   font-family: 'Georgia', serif;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  margin: -20px 0 0 -20px;
+}
+
+/* Position each number in a circle using rotation */
+.Num12 {
+  transform: rotate(0deg) translateY(-19vh) rotate(0deg);
+}
+
+.Num1 {
+  transform: rotate(30deg) translateY(-19vh) rotate(-30deg);
+}
+
+.Num2 {
+  transform: rotate(60deg) translateY(-19vh) rotate(-60deg);
+}
+
+.Num3 {
+  transform: rotate(90deg) translateY(-19vh) rotate(-90deg);
+}
+
+.Num4 {
+  transform: rotate(120deg) translateY(-19vh) rotate(-120deg);
+}
+
+.Num5 {
+  transform: rotate(150deg) translateY(-19vh) rotate(-150deg);
 }
 
 .Num6 {
-  position: absolute;
-  top: 80%;
-  font-size: 28px;
-  font-weight: bold;
-  color: #1a1a1a;
-  font-family: 'Georgia', serif;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  transform: rotate(180deg) translateY(-19vh) rotate(-180deg);
+}
+
+.Num7 {
+  transform: rotate(210deg) translateY(-19vh) rotate(-210deg);
+}
+
+.Num8 {
+  transform: rotate(240deg) translateY(-19vh) rotate(-240deg);
 }
 
 .Num9 {
-  position: absolute;
-  top: 46%;
-  left: 10%;
-  font-size: 28px;
-  font-weight: bold;
-  color: #1a1a1a;
-  font-family: 'Georgia', serif;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  transform: rotate(270deg) translateY(-19vh) rotate(-270deg);
 }
 
-.Num12 {
-  position: absolute;
-  top: 10%;
-  font-size: 28px;
-  font-weight: bold;
-  color: #1a1a1a;
-  font-family: 'Georgia', serif;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+.Num10 {
+  transform: rotate(300deg) translateY(-19vh) rotate(-300deg);
+}
+
+.Num11 {
+  transform: rotate(330deg) translateY(-19vh) rotate(-330deg);
 }
 
 .ContenedorSegundero {
-  height: 100%;
-  width: 5%;
+  height: 50%;
+  width: 10%;
   position: absolute;
-  top: -50%;
+  top: 0;
   left: 50%;
-  margin-left: -2%;
+  transform: translateX(-50%);
   transform-origin: center bottom;
 }
 
@@ -121,33 +146,35 @@ body {
   background-image: url(../img/AgujaSegundos.png);
   background-size: contain;
   background-repeat: no-repeat;
-  height: inherit;
-  top: 0;
+  background-position: bottom;
+  height: 146%;
 }
 
 .ContenedorMinutero {
-  height: 60%;
-  width: 5%;
+  height: 45%;
+  width: 10%;
   position: absolute;
   top: 5%;
   left: 50%;
-  margin-left: -2.5%;
+  transform: translateX(-50%);
   transform-origin: center bottom;
 }
 
 .Minutero {
   background-image: url(../img/AgujaGrande.png);
   background-size: contain;
-  height: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 110%;
 }
 
 .ContenedorHora {
-  height: 45%;
-  width: 6%;
+  height: 35%;
+  width: 10%;
   position: absolute;
   top: 15%;
   left: 50%;
-  margin-left: -3%;
+  transform: translateX(-50%);
   transform-origin: center bottom;
 }
 
@@ -155,8 +182,8 @@ body {
   background-image: url(../img/AgujaPeque.png);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
+  background-position: bottom;
+  height: 110%;
 }
 
 /* Center dot */
